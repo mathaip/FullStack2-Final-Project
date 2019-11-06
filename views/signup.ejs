@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Info Counch SignUp Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/cyborg/bootstrap.min.css">
+    <link href="/css/signup.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- //Custom Theme files -->
+    <!-- web font -->
+    <link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+    <!-- //web font -->
+</head>
+
+<body>
+    <!-- main -->
+    <div class="main-w3layouts wrapper">
+        <h1>Info Counch SignUp Form</h1>
+        <div class="main-agileinfo">
+            <div class="agileits-top">
+                <%- include('./partials/messages.ejs') %>
+                    <form action="/users/signup" method="post" class="form-signup">
+                        <div class="form-group">
+                            <label for="Username">Username</label>
+                            <input class="text" id="username" class="form-control " type="text" name="username" placeholder="Username" value="<%= typeof username != 'undefined' ? username : '' %>">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input class="form-control" type="email" id="email" name="email" placeholder="Email" value="<%= typeof email != 'undefined' ? email : '' %>">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input class="form-control" type="password" name="password" placeholder="Password" value="<%= typeof password != 'undefined' ? password : '' %>">
+                        </div>
+                        <div class="form-group">
+                            <label for="password2">Confirm Password</label>
+                            <input class="form-control" type="password" id="password2" name="password2" placeholder="Confirm Password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                                Register
+                    </button>
+                    </form>
+                    <p>Don't have an Account? <a href="login"> Login Now!</a></p>
+            </div>
+        </div>
+
+        <ul class="colorlib-bubbles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <!-- //main -->
+</body>
+
+</html>

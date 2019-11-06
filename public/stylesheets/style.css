@@ -1,0 +1,19 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    font-style: italic
+}
+
+a {
+    color: #00B7FF;
+}
+
+p {
+    color: green;
+    text-decoration-color: blue
+}
+
+.jumbotron {
+    background: url("../img/bg-pattern.png"), #7b4397;
+    background: url("../img/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+}
